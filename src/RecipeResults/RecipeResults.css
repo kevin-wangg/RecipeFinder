@@ -1,0 +1,17 @@
+form {
+	margin: 2%;
+}
+
+input {
+	height: 40px;
+	width: 50%;
+	font-size: 28px;
+}
+
+button {
+	height: 40px;
+}
+
+ul {
+	list-style-type: none;
+}
