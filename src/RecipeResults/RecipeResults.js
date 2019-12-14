@@ -36,7 +36,6 @@ class RecipeResults extends React.Component {
 			this.setState({
 				recipes: data,
 			})
-			console.log(this.state.recipes);
 		})
 		this.setState({
 			results: this.state.recipes.map(
@@ -59,17 +58,20 @@ class RecipeResults extends React.Component {
 		return (
 			<div>
 				<form>
-					<input 
-						type="text"
-						name="value"
-						value={this.state.value}
-						onChange={this.handleChange}
-					/>
-					<button onClick = {this.handleSubmit}>
-						Find Recipes
-					</button>
+					<div>
+						<input 
+							type="text"
+							name="value"
+							value={this.state.value}
+							onChange={this.handleChange}
+						/>
+						<br />
+						<button onClick = {this.handleSubmit}>
+							Find Recipes
+						</button>
+					</div>
 				</form>
-				<ul>
+				<ul className="results">
 					{results}
 				</ul>
 			</div>

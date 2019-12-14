@@ -6,12 +6,16 @@ input {
 	height: 40px;
 	width: 50%;
 	font-size: 28px;
+	border-radius: 5px;
+	border: 2px solid grey;
 }
 
 button {
 	height: 40px;
+	margin-top: 5px;
 }
 
-ul {
+.results {
 	list-style-type: none;
+	margin-left: 20%;
 }

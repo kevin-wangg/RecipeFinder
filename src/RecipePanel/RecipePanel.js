@@ -1,12 +1,15 @@
 import React from "react";
-import RecipeResults from "../RecipeResults/RecipeResults";
+import "./RecipePanel.css";
 
 const RecipePanel = (props) => {
+	const recipeQuery = props.info.title.split(" ").join("+") + "+recipe";
 	return (
-		<div>
-			<h1>{props.info.title}</h1>
-			<img src = {props.info.image}/>
-			<p>{props.info.instructions}</p>
+		<div className="card" style={{width: "400px", height: "340px", marginBottom: "20px"}}>
+			<img className="card-img-top" src={props.info.image} alt={props.info.title}/>
+			<div className="card-body">
+				<h5 className="card-title">{props.info.title}</h5>
+				<a href={"https://www.google.com/search?q=" + recipeQuery} className="btn btn-primary" target="_blank">Go to Recipe</a>
+			</div>
 		</div>
 	)
 }
