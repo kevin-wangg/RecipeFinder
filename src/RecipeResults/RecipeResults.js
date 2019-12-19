@@ -46,7 +46,7 @@ class RecipeResults extends React.Component {
 		});
 	}
 	render() {
-		const results = this.state.recipes.map(
+		let results = this.state.recipes.map(
 			(item => {
 				return (
 				 <li key = {item.id}>
@@ -55,6 +55,9 @@ class RecipeResults extends React.Component {
 				);
 			})
 		)
+		if(this.state.recipes.length === 0) {
+			results = <h1>No recipes here</h1>
+		}
 		return (
 			<div>
 				<form>
@@ -62,6 +65,7 @@ class RecipeResults extends React.Component {
 						<input 
 							type="text"
 							name="value"
+							placeholder="Enter ingredients here"
 							value={this.state.value}
 							onChange={this.handleChange}
 						/>

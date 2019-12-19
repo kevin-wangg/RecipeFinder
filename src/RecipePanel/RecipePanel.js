@@ -8,7 +8,7 @@ const RecipePanel = (props) => {
 			<img className="card-img-top" src={props.info.image} alt={props.info.title}/>
 			<div className="card-body">
 				<h5 className="card-title">{props.info.title}</h5>
-				<a href={"https://www.google.com/search?q=" + recipeQuery} className="btn btn-primary" target="_blank">Go to Recipe</a>
+				<a href={"https://www.google.com/search?q=" + recipeQuery} className="btn btn-primary" target="_blank" rel="noopener noreferrer">Go to Recipe</a>
 			</div>
 		</div>
 	)
