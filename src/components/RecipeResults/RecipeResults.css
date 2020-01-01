@@ -2,7 +2,7 @@ form {
 	margin: 2%;
 }
 
-input {
+.text-field {
 	height: 40px;
 	width: 50%;
 	font-size: 28px;

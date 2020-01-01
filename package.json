@@ -4,6 +4,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@google-cloud/vision": "^1.7.2",
+    "google-auth-library": "^5.7.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "^2.1.8"
